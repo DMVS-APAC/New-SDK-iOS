@@ -3,17 +3,17 @@
 This is a sample project demonstrating the usage of Dailymotion Player SDK in a UIKit application.
 Setup
 
-    Clone this repository to your local machine.
-    Open the project in Xcode.
-    If necessary, change the Bundle Identifier and Team under the target's General settings to match your Apple Developer account.
+1. Clone this repository to your local machine.
+2. Open the project in Xcode.
+3. If necessary, change the Bundle Identifier and Team under the target's General settings to match your Apple Developer account.
 
 ## Running the project
 
 To run the project:
 
-    Connect an iPhone or iPad to your Mac, or you could use the Simulator.
-    Select your device or a simulator from the active scheme menu.
-    Press the Run button or use the Cmd+R shortcut to build and run the project on your selected device.
+1. Connect an iPhone or iPad to your Mac, or you could use the Simulator.
+2. Select your device or a simulator from the active scheme menu.
+3. Press the Run button or use the Cmd+R shortcut to build and run the project on your selected device.
 
 ## Debugging
 

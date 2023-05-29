@@ -13,6 +13,8 @@
 		D2251DE02A1B0E9800D8B8AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2251DDE2A1B0E9800D8B8AB /* Main.storyboard */; };
 		D2251DE22A1B0E9A00D8B8AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2251DE12A1B0E9A00D8B8AB /* Assets.xcassets */; };
 		D2251DE52A1B0E9A00D8B8AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2251DE32A1B0E9A00D8B8AB /* LaunchScreen.storyboard */; };
+		D2251DEE2A1B10E500D8B8AB /* DailymotionPlayerSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D2251DED2A1B10E500D8B8AB /* DailymotionPlayerSDK */; };
+		D2251DF02A1B11E400D8B8AB /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2251DEF2A1B11E400D8B8AB /* VideoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		D2251DE12A1B0E9A00D8B8AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2251DE42A1B0E9A00D8B8AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2251DE62A1B0E9A00D8B8AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2251DEF2A1B11E400D8B8AB /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2251DEE2A1B10E500D8B8AB /* DailymotionPlayerSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				D2251DE12A1B0E9A00D8B8AB /* Assets.xcassets */,
 				D2251DE32A1B0E9A00D8B8AB /* LaunchScreen.storyboard */,
 				D2251DE62A1B0E9A00D8B8AB /* Info.plist */,
+				D2251DEF2A1B11E400D8B8AB /* VideoView.swift */,
 			);
 			path = PlayerExample;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = PlayerExample;
+			packageProductDependencies = (
+				D2251DED2A1B10E500D8B8AB /* DailymotionPlayerSDK */,
+			);
 			productName = PlayerExample;
 			productReference = D2251DD52A1B0E9800D8B8AB /* PlayerExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = D2251DCC2A1B0E9800D8B8AB;
+			packageReferences = (
+				D2251DEC2A1B10E500D8B8AB /* XCRemoteSwiftPackageReference "player-sdk-ios" */,
+			);
 			productRefGroup = D2251DD62A1B0E9800D8B8AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2251DF02A1B11E400D8B8AB /* VideoView.swift in Sources */,
 				D2251DDD2A1B0E9800D8B8AB /* ViewController.swift in Sources */,
 				D2251DD92A1B0E9800D8B8AB /* AppDelegate.swift in Sources */,
 				D2251DDB2A1B0E9800D8B8AB /* SceneDelegate.swift in Sources */,
@@ -295,12 +307,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dm.PlayerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dailymotion.Player-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,12 +336,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dm.PlayerExample;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dailymotion.Player-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -358,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2251DEC2A1B10E500D8B8AB /* XCRemoteSwiftPackageReference "player-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dailymotion/player-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2251DED2A1B10E500D8B8AB /* DailymotionPlayerSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2251DEC2A1B10E500D8B8AB /* XCRemoteSwiftPackageReference "player-sdk-ios" */;
+			productName = DailymotionPlayerSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2251DCD2A1B0E9800D8B8AB /* Project object */;
 }
